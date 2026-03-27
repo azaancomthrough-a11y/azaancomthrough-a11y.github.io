@@ -1,72 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Catch the Box Game</title>
-  <style>
-    body {
-      margin: 0;
-      overflow: hidden;
-      font-family: Arial, sans-serif;
-      background: #111;
-      color: white;
-      text-align: center;
-    }
 
-    #score {
-      position: absolute;
-      top: 10px;
-      left: 10px;
-      font-size: 20px;
-    }
+<!-- saved from url=(0040)file:///C:/Users/HOME/Desktop/index.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252"></head><body>print("Azaan Collection")
 
-    #gameArea {
-      width: 100vw;
-      height: 100vh;
-      position: relative;
-    }
+print("danish")
 
-    #box {
-      width: 50px;
-      height: 50px;
-      background: red;
-      position: absolute;
-      cursor: pointer;
-      border-radius: 8px;
-    }
-  </style>
-</head>
-<body>
+name = "azaan"
 
-<div id="score">Score: 0</div>
-<div id="gameArea">
-  <div id="box"></div>
-</div>
-
-<script>
-  const box = document.getElementById('box');
-  const scoreDisplay = document.getElementById('score');
-  let score = 0;
-
-  function moveBox() {
-    const x = Math.random() * (window.innerWidth - 50);
-    const y = Math.random() * (window.innerHeight - 50);
-    box.style.left = x + 'px';
-    box.style.top = y + 'px';
-  }
-
-  box.addEventListener('click', () => {
-    score++;
-    scoreDisplay.textContent = 'Score: ' + score;
-    moveBox();
-  });
-
-  // Move box every second
-  setInterval(moveBox, 1000);
-
-  // Initial position
-  moveBox();
-</script>
-
-</body>
-</html>
+age = "13"
+</body></html>
